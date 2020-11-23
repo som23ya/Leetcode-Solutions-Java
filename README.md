@@ -1,4 +1,6 @@
 # Leetcode-Solutions-Java
 
 
-##Pascals Triangle
+#### [Array](problems/src/array)
+
+- [Pascals Traiangle II]
