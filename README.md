@@ -3,4 +3,4 @@
 
 #### [Array](problems/src/array)
 
-- [Pascals Traiangle II]
+- [Pascals Triangle ]
