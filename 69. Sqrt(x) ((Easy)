@@ -1,0 +1,33 @@
+/**
+Given a non-negative integer x, compute and return the square root of x.
+
+Since the return type is an integer, the decimal digits are truncated, and only the integer part of the result is returned.
+
+ 
+
+Example 1:
+
+Input: x = 4
+Output: 2
+
+*/
+
+class Solution {
+    public int mySqrt(int x) {
+        if(x<2)
+            return x;
+        int hi=x, low=1;
+        long mid=low+((hi-low)/2);
+        while(hi-low>1)
+        {
+            long sq=mid*mid;
+            if(sq==x)
+                return (int)mid;
+            if(sq>x)
+                hi=(int) mid;
+            else
+                low=(int)mid;
+            mid=low+((hi-low)/2);
+        }
+        return (int)mid;
+    } }
